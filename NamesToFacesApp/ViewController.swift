@@ -41,7 +41,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     @objc func addNewPerson(){
         let picker = UIImagePickerController()
         picker.allowsEditing = true
-        picker.delegate = self
+        picker.delegate = self  
         present(picker, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
